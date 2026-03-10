@@ -5,7 +5,7 @@ Every fox mention is now a Sparky mention!
 
 Since I created the characters of Sparky and Sugar, I've sometimes called foxes (and arctic foxes) respectively Sparky and Sugar.
 
-So, I made this fully little chromium extension that replace every single mention of fox and it's arctic variant with the names of my characters.
+So, I made this funny little chromium extension that replace every single mention of fox and it's arctic variant with the names of my characters.
 
 Installation is super duper simple:
 
