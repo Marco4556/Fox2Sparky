@@ -1,7 +1,7 @@
 # Fox2Sparky
 Every fox mention is now a Sparky mention!
 
-#DISCLAIMER: THIS EXTENSION HAS BEEN TESTED ONLY ON BRAVE (CHROMIUM)!
+**DISCLAIMER: THIS EXTENSION HAS BEEN TESTED ONLY ON BRAVE (CHROMIUM)!
 
 Since I created the characters of Sparky and Sugar, I've sometimes called foxes (and arctic foxes) respectively Sparky and Sugar.
 
