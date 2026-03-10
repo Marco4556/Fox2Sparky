@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Fox2Sparky",
+  "version": "1.0",
+  "description": "Every fox mention is now a Sparky mention!",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
