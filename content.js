@@ -1,56 +1,37 @@
-function replaceTextSparky(node) {
-  const find = /fox/gi;
-  const replace = "Sparky";
-
+function replaceText(node, find, replace) {
   if (node.nodeType === Node.TEXT_NODE) {
     node.textContent = node.textContent.replace(find, replace);
   } else {
     for (let child of node.childNodes) {
-      replaceTextSparky(child);
+      replaceText(child, find, replace);
     }
   }
 }
 
-function replaceTextSparkies(node) {
-  const find = /foxes/gi;
-  const replace = "Sparkies";
-
-  if (node.nodeType === Node.TEXT_NODE) {
-    node.textContent = node.textContent.replace(find, replace);
-  } else {
-    for (let child of node.childNodes) {
-      replaceTextSparkies(child);
-    }
-  }
+function applyReplacements(node = document.body) {
+  replaceText(node, /arctic foxes/gi, "Sugars");
+  replaceText(node, /arctic fox/gi, "Sugar");
+  replaceText(node, /foxes/gi, "Sparkies");
+  replaceText(node, /fox/gi, "Sparky");
 }
 
-function replaceTextSugar(node) {
-  const find = /arctic fox/gi;
-  const replace = "Sugar";
+// Apply replacements to initial page load
+applyReplacements();
 
-  if (node.nodeType === Node.TEXT_NODE) {
-    node.textContent = node.textContent.replace(find, replace);
-  } else {
-    for (let child of node.childNodes) {
-      replaceTextSugar(child);
+// Watch for dynamically added content
+const observer = new MutationObserver((mutations) => {
+  for (let mutation of mutations) {
+    // Apply replacements to added nodes
+    for (let node of mutation.addedNodes) {
+      if (node.nodeType === Node.ELEMENT_NODE || node.nodeType === Node.TEXT_NODE) {
+        applyReplacements(node);
+      }
     }
   }
-}
+});
 
-function replaceTextSugars(node) {
-  const find = /arctic foxes/gi;
-  const replace = "Sugars";
-
-  if (node.nodeType === Node.TEXT_NODE) {
-    node.textContent = node.textContent.replace(find, replace);
-  } else {
-    for (let child of node.childNodes) {
-      replaceTextSugars(child);
-    }
-  }
-}
-
-replaceTextSugars(document.body);
-replaceTextSugar(document.body);
-replaceTextSparkies(document.body);
-replaceTextSparky(document.body);
+// Start observing the document for changes
+observer.observe(document.body, {
+  childList: true,
+  subtree: true
+});
