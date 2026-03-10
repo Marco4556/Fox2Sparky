@@ -15,4 +15,4 @@ Installation is super duper simple:
 4. Select this extension's folder
 5. There's no step 5
 
-(note: this is a little project, nothing too professional. i know that this extension doesn't really work with dynamic pages, i will eventually fix later)
+i don't know what to write here, pizza with wurstels and french fries
