@@ -15,5 +15,12 @@ Installation is super duper simple:
 4. Select this extension's folder
 5. There's no step 5
 
-i don't know what to write here, pizza with wurstels and french fries
+Questa estensione è anche in italiano, anche se **non è il massimo** (ad esempio, non cambia il genere degli aggettivi; La volpe -> La Sparky)
 
+Ecco i passi per installare l'installazione in italiano:
+
+1. Apri la pagina delle estensioni del tuo browser
+2. Attiva la modalità sviluppatore
+3. Clicca su "Carica estensione non pacchettata"
+4. Seleziona la cartella di questa estenzione
+5. Non c'è nessun passo 5
