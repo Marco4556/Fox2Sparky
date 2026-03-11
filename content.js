@@ -10,13 +10,17 @@ function replaceText(node, find, replace) {
 
 
 function applyReplacements(node = document.body) {
-  replaceText(node, /volpi artiche/gi, "Sugars");
+  replaceText(node, /volpi artiche/gi, "Sugar");
   replaceText(node, /volpe artica/gi, "Sugar");
-  replaceText(node, /volpi/gi, "Sparkies");
+  replaceText(node, /volpi rosse/gi, "Sparky");
+  replaceText(node, /volpe rossa/gi, "Sparky");
+  replaceText(node, /volpi/gi, "Sparky");
   replaceText(node, /volpe/gi, "Sparky");
 
   replaceText(node, /arctic foxes/gi, "Sugars");
   replaceText(node, /arctic fox/gi, "Sugar");
+  replaceText(node, /red foxes/gi, "Sparkies");
+  replaceText(node, /red fox/gi, "Sparky");
   replaceText(node, /foxes/gi, "Sparkies");
   replaceText(node, /fox/gi, "Sparky");
 }
