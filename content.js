@@ -8,7 +8,13 @@ function replaceText(node, find, replace) {
   }
 }
 
+
 function applyReplacements(node = document.body) {
+  replaceText(node, /volpi artiche/gi, "Sugars");
+  replaceText(node, /volpe artica/gi, "Sugar");
+  replaceText(node, /volpi/gi, "Sparkies");
+  replaceText(node, /volpe/gi, "Sparky");
+
   replaceText(node, /arctic foxes/gi, "Sugars");
   replaceText(node, /arctic fox/gi, "Sugar");
   replaceText(node, /foxes/gi, "Sparkies");
