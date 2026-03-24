@@ -1,7 +1,7 @@
 # Fox2Sparky
 Every fox mention is now a Sparky mention!
 
-**DISCLAIMER: THIS EXTENSION HAS BEEN TESTED ONLY ON BRAVE (CHROMIUM)!**
+**DISCLAIMER: THIS EXTENSION HAS BEEN TESTED ONLY ON BRAVE AND CHROME (CHROMIUM)!**
 
 Since I created the characters of Sparky and Sugar, I've sometimes called foxes (and arctic foxes) respectively Sparky and Sugar.
 
@@ -15,7 +15,8 @@ Installation is super duper simple:
 4. Select this extension's folder
 5. There's no step 5
 
-Questa estensione è anche in italiano, anche se **non è il massimo** (ad esempio, non cambia il genere degli aggettivi; La volpe -> La Sparky)
+Questa estensione è anche in italiano ~~, anche se **non è il massimo** (ad esempio, non cambia il genere degli aggettivi; La volpe -> La Sparky)~~
+Il comportamento citato sopra dovrebbe essere stato risolto
 
 Ecco i passi per installare l'installazione in italiano:
 
