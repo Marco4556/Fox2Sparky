@@ -1,5 +1,12 @@
 function replaceText(node, find, replace) {
   if (node.nodeType === Node.TEXT_NODE) {
+    let parent = node.parentElement;
+    while (parent) {
+      if (parent.tagName === 'INPUT' || parent.tagName === 'TEXTAREA' || parent.contentEditable === 'true') {
+        return;
+      }
+      parent = parent.parentElement;
+    }
     node.textContent = node.textContent.replace(find, replace);
   } else {
     for (let child of node.childNodes) {
@@ -10,6 +17,13 @@ function replaceText(node, find, replace) {
 
 
 function applyReplacements(node = document.body) {
+  replaceText(node, /le volpi artiche/gi, "Sugar");
+  replaceText(node, /la volpe artica/gi, "Sugar");
+  replaceText(node, /le volpi rosse/gi, "Sparky");
+  replaceText(node, /la volpe rossa/gi, "Sparky");
+  replaceText(node, /le volpi/gi, "Sparky");
+  replaceText(node, /la volpe/gi, "Sparky");
+
   replaceText(node, /volpi artiche/gi, "Sugar");
   replaceText(node, /volpe artica/gi, "Sugar");
   replaceText(node, /volpi rosse/gi, "Sparky");
@@ -25,13 +39,11 @@ function applyReplacements(node = document.body) {
   replaceText(node, /fox/gi, "Sparky");
 }
 
-// Apply replacements to initial page load
 applyReplacements();
 
 // Watch for dynamically added content
 const observer = new MutationObserver((mutations) => {
   for (let mutation of mutations) {
-    // Apply replacements to added nodes
     for (let node of mutation.addedNodes) {
       if (node.nodeType === Node.ELEMENT_NODE || node.nodeType === Node.TEXT_NODE) {
         applyReplacements(node);
@@ -40,7 +52,6 @@ const observer = new MutationObserver((mutations) => {
   }
 });
 
-// Start observing the document for changes
 observer.observe(document.body, {
   childList: true,
   subtree: true
