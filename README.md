@@ -1,6 +1,8 @@
 # Fox2Sparky
 Every fox mention is now a Sparky mention!
 
+**NEW UPDATE!! - Added fennec fox (Stan) and nine tailed fox (Kiki). Also removed Italian support (faceva cagare al cazzo)**
+
 **DISCLAIMER: THIS EXTENSION HAS BEEN TESTED ONLY ON BRAVE AND CHROME (CHROMIUM)!**
 
 Since I created the characters of Sparky and Sugar, I've sometimes called foxes (and arctic foxes) respectively Sparky and Sugar.
@@ -14,14 +16,3 @@ Installation is super duper simple:
 3. Click on "Load unpacked"
 4. Select this extension's folder
 5. There's no step 5
-
-Questa estensione è anche in italiano ~~, anche se **non è il massimo** (ad esempio, non cambia il genere degli aggettivi; La volpe -> La Sparky)~~
-Il comportamento citato sopra dovrebbe essere stato risolto
-
-Ecco i passi per installare l'installazione in italiano:
-
-1. Apri la pagina delle estensioni del tuo browser
-2. Attiva la modalità sviluppatore
-3. Clicca su "Carica estensione non pacchettata"
-4. Seleziona la cartella di questa estenzione
-5. Non c'è nessun passo 5
