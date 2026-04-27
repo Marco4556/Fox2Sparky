@@ -17,20 +17,10 @@ function replaceText(node, find, replace) {
 
 
 function applyReplacements(node = document.body) {
-  replaceText(node, /le volpi artiche/gi, "Sugar");
-  replaceText(node, /la volpe artica/gi, "Sugar");
-  replaceText(node, /le volpi rosse/gi, "Sparky");
-  replaceText(node, /la volpe rossa/gi, "Sparky");
-  replaceText(node, /le volpi/gi, "Sparky");
-  replaceText(node, /la volpe/gi, "Sparky");
-
-  replaceText(node, /volpi artiche/gi, "Sugar");
-  replaceText(node, /volpe artica/gi, "Sugar");
-  replaceText(node, /volpi rosse/gi, "Sparky");
-  replaceText(node, /volpe rossa/gi, "Sparky");
-  replaceText(node, /volpi/gi, "Sparky");
-  replaceText(node, /volpe/gi, "Sparky");
-
+  replaceText(node, /nine tailed foxes/gi, "Kikis");
+  replaceText(node, /nine tailed fox/gi, "Kiki");
+  replaceText(node, /fennec foxes/gi, "Stans");
+  replaceText(node, /fennec fox/gi, "Stan");
   replaceText(node, /arctic foxes/gi, "Sugars");
   replaceText(node, /arctic fox/gi, "Sugar");
   replaceText(node, /red foxes/gi, "Sparkies");
